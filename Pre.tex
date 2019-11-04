@@ -1,0 +1,38 @@
+\documentclass[a4paper,oneside,article]{memoir}
+
+
+% ---------------Preamble fra Latex kursus---------------------
+\usepackage[utf8]{inputenc}                 % Korrekt håndtering af æ, ø og å
+\usepackage[T1]{fontenc}                    % Korrekt håndtering af æ, ø og å
+\usepackage{microtype}                      % Typografisk magi! Giver bl.a. pænere orddeling
+\usepackage{graphicx}                       % Gør det muligt at indsætte billeder
+\usepackage{amsmath}                        % Giver adgang til uundværlige matematikting
+\usepackage{siunitx}                        % Dette  gør alle mat notationer nemmer ! 
+\usepackage[danish]{babel}                  % Danske betegnelser og orddeling
+\renewcommand{\danishhyphenmins}{22}        % Bedre dansk orddeling
+
+%--------------------Selv fundet Packer------------------------
+\usepackage[margin=1.1in]{geometry}         % Marginer
+\usepackage{ragged2e}                       % Retter alt ind til venstre
+\usepackage{parskip}                        % Strækker ud til begge marginer
+\usepackage{booktabs}                       % Tablesgenerator bad om det
+\setlength{\parindent}{0pt}                 % Fjerner indents
+%--------------------Ekstra------------------------------------
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{floatrow}
+\usepackage{url}
+\usepackage[resetlabels,labeled,]{multibib}
+\newcites{A}{Bilag}
+%----------------------- Macroer ------------------------------
+
+
+%----------------------Tabeller--------------------------------
+%\toprule               Top tyklinje
+%\midrule               Mid tyndlinje
+%\bottomrule            Bund tyklinje
+
+%\begin{minipage}[t]{7CM} TEXT \vspace{2mm}\end{minipage}        Tekstombrydning
+
+%-------------------Andre nytte komandoer----------------------
+%\plainbreak{x} x = antal linje jeg vil hoppe. 
+%\graphicspath{ {./images/} }
